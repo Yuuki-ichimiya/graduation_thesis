@@ -1,0 +1,60 @@
+  9%|▉         | 9/100 [09:00<1:31:05, 60.06s/it]
+HHL calculation completed.
+Elapsed time[s]: 540.5933110713959
+register qubits: 9
+number: 2 h: 0.064  n: 100  e: 5
+Number of updates: 9
+  9%|▉         | 9/100 [52:05<8:46:45, 347.31s/it] 
+HHL calculation completed.
+Elapsed time[s]: 3125.826010942459
+register qubits: 10
+number: 2 h: 0.064  n: 100  e: 5
+Number of updates: 9
+  7%|▋         | 7/100 [4:25:59<58:53:54, 2279.94s/it]
+HHL calculation completed.
+Elapsed time[s]: 15959.586355924606
+register qubits: 11
+number: 2 h: 0.064  n: 100  e: 5
+Number of updates: 7
+  1%|          | 1/100 [00:18<30:02, 18.21s/it]
+Newton calculation completed.
+Elapsed time[s]: 18.212543964385986
+number: 2 h: 0.064  n: 100  e: 5
+Number of updates: 1
+
+
+
+
+
+Runge-Kutta method calculation completed.
+Elapsed time[s]: 0.16846585273742676
+number: 6 h: 0.01  n: 700
+100%|██████████| 9/9 [5:08:58<00:00, 2059.88s/it]
+Newton calculation completed.
+Elapsed time[s]: 18538.96844315529
+number: 6 h: 0.01  n: 700
+Number of updates: 9
+
+
+100%|██████████| 9/9 [9:49:00<00:00, 3926.75s/it]
+HHL calculation completed.
+Elapsed time[s]: 35340.741778850555
+register qubits: 9
+number: 6 h: 0.01  n: 700
+Number of updates: 9
+
+100%|██████████| 9/9 [13:04:55<00:00, 5232.80s/it]
+HHL calculation completed.
+Elapsed time[s]: 47095.19668889046
+register qubits: 10
+number: 6 h: 0.01  n: 700
+Number of updates: 9
+
+100%|██████████| 9/9 [34:20:03<00:00, 13733.75s/it]
+HHL calculation completed.
+Elapsed time[s]: 123603.73412013054
+register qubits: 11
+number: 6 h: 0.01  n: 700
+Number of updates: 9
+
+
