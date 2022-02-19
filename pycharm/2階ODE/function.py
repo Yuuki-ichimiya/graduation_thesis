@@ -2,7 +2,6 @@ from import_summary import *
 from utility import *  # 計算基底に関する確率分布を表示
 from HHL_function import *  # HHL algorithmに必要な関数
 from copy import copy
-import tqdm
 
 np.set_printoptions(linewidth=200, precision=20)
 
