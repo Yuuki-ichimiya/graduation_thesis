@@ -7,13 +7,13 @@ y_exact_newton = np.zeros(n)
 y_runge4 = np.zeros(n)
 
 for index, reg_nbit in enumerate(reg_nbit_list):
-    with open("2階ODE数値結果/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(
+    with open("2階ODE数値結果/number=" + str(number) + "/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(
             h) + ",n=" + str(n) + ").csv", newline="") as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             HHL_runge_result[index][i] = row[1]
 
-with open("2階ODE数値結果/NEWTON_EXACT(number=" + str(number) + ",h=" + str(
+with open("2階ODE数値結果/number=" + str(number) + "/NEWTON_EXACT(number=" + str(number) + ",h=" + str(
         h) + ",n=" + str(n) + ").csv", newline="") as f:
     reader = csv.reader(f)
     for i, row in enumerate(reader):
@@ -23,7 +23,7 @@ if number == 6:
     h_runge = 0.0001  # 刻み幅
     num = int(h / h_runge)
     print(num)
-    with open('2階ODE数値結果/runge4_vanderpol_mu=' + str(mu) + '.csv', newline='') as f:
+    with open("2階ODE数値結果/number=" + str(number) + "/runge4_vanderpol_mu=" + str(mu) + ".csv", newline="") as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             if i // num == n:
@@ -33,7 +33,7 @@ if number == 6:
             else:
                 continue
 else:
-    with open("2階ODE数値結果/RUNGE_EXACT(number=" + str(number) + ",h=" + str(
+    with open("2階ODE数値結果/number=" + str(number) + "/RUNGE_EXACT(number=" + str(number) + ",h=" + str(
             h) + ",n=" + str(n) + ").csv", newline="") as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
@@ -61,7 +61,7 @@ else:
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize='large')
 plt.title("Solution Behavior in each solution method")
 plt.grid(color="black", linestyle='--', linewidth=0.3)
-fig.savefig("2階ODE数値結果/plot(number=" + str(number) + ",reg_qubits=" + str(reg_nbit_list) + ",h=" + str(
+fig.savefig("2階ODE数値結果/number=" + str(number) + "/plot(number=" + str(number) + ",reg_qubits=" + str(reg_nbit_list) + ",h=" + str(
     h) + ",n=" + str(n) + ").png", bbox_inches="tight")
 plt.show()
 
@@ -91,6 +91,6 @@ plt.title("Relative error in each solution method")
 plt.grid(color="black", linestyle='--', linewidth=0.3)
 plt.yscale("log")
 fig.savefig(
-    "2階ODE数値結果/error(number=" + str(number) + ",reg_qubits=" + str(reg_nbit_list) + ",h=" + str(
+    "2階ODE数値結果/number=" + str(number) + "/error(number=" + str(number) + ",reg_qubits=" + str(reg_nbit_list) + ",h=" + str(
         h) + ",n=" + str(n) + ").png", bbox_inches="tight")
 plt.show()
