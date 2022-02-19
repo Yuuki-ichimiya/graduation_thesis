@@ -6,7 +6,7 @@ from copy import copy
 np.set_printoptions(linewidth=200, precision=20)
 
 # 各パラメータ
-number = 1
+number = 3
 scale_fac = 1.0
 reg_nbit_list = np.array([9, 10, 11])  # 位相推定に使うレジスタの数(10,11,12)
 

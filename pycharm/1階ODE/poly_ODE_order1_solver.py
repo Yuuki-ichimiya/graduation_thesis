@@ -3,7 +3,6 @@ from utility import *  # 計算基底に関する確率分布を表示
 from HHL_function import *  # HHL algorithmに必要な関数
 from function import *  # 各設定
 
-
 ############################################# ①初期設定（解法共通） #############################################
 # 多項式(の係数)list1と多項式(の係数)list2の掛け算、十分要素数が確保されているならenough=1
 def times_list(list1, list2, enough=1):
@@ -96,7 +95,7 @@ def right_side_newton(x, k_coef_newton):
 # for i in range(1, len(newton_first)):
 #     newton_first[i] += random.uniform(e, -e)
 
-newton_first = [y_first[0] for i in range(len(x_list))]  # 初期条件
+newton_first = np.array([y_first[0] for i in range(len(x_list))])  # 初期条件
 
 k_coef_newton = np.zeros((n, 1 + order ** 4))
 diff_k_coef_newton = np.zeros((n, 1 + order ** 4))
