@@ -1,30 +1,30 @@
-﻿Runge-Kutta calculation completed.
-Elapsed time[s]: 0.015623092651367188
-number: 3 h: 0.01  n: 100
+﻿0%|          | 0/6 [00:00<?, ?it/s]
+Runge-Kutta calculation completed.
+Elapsed time[s]: 0.015870094299316406
+number: 3 h: 0.01  n: 100 
 
-100%|██████████| 6/6 [00:23<00:00,  3.88s/it]
+100%|██████████| 6/6 [01:14<00:00, 12.39s/it]
 Newton calculation completed.
-Elapsed time[s]: 23.294126987457275
-number: 3 h: 0.01  n: 100
-Number of updates: 0 
+Elapsed time[s]: 74.42681908607483
+number: 3 h: 0.01  n: 100 
 
-100%|██████████| 6/6 [01:06<00:00, 11.12s/it]
-HHL calculation completed.
-Elapsed time[s]: 66.7422878742218
+100%|██████████| 6/6 [04:34<00:00, 45.76s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]HHL calculation completed.
+Elapsed time[s]: 274.5752019882202
 register qubits: 9
-number: 3 h: 0.01  n: 100
+number: 3 h: 0.01  n: 100 
 
-100%|██████████| 6/6 [06:19<00:00, 63.30s/it]
-HHL calculation completed.
-Elapsed time[s]: 379.8178725242615
+100%|██████████| 6/6 [29:52<00:00, 298.73s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]HHL calculation completed.
+Elapsed time[s]: 1792.3641650676727
 register qubits: 10
-number: 3 h: 0.01  n: 100
+number: 3 h: 0.01  n: 100 
 
-100%|██████████| 6/6 [44:58<00:00, 449.81s/it]
+100%|██████████| 6/6 [4:03:12<00:00, 2432.06s/it]  
 HHL calculation completed.
-Elapsed time[s]: 2698.8501183986664
+Elapsed time[s]: 14592.358053922653
 register qubits: 11
-number: 3 h: 0.01  n: 100
+number: 3 h: 0.01  n: 100 
 
 
 Process finished with exit code 0

@@ -54,7 +54,7 @@ for i in range(len(x_list) - 1):
 
 t = time.time() - start
 
-with open("1階ODE数値結果/RUNGE_EXACT(number=" + str(number) + ",h=" + str(
+with open("1階ODE数値結果/number=" + str(number) + "/RUNGE_EXACT(number=" + str(number) + ",h=" + str(
         h) + ",n=" + str(n) + ").csv", 'w', newline='') as f:
     writer = csv.writer(f)
     for i in range(n):
@@ -161,7 +161,7 @@ t = time.time() - start
 y_exact_newton = newton_first
 
 with open(
-        "1階ODE数値結果/NEWTON_EXACT(number=" + str(number) + ",h=" + str(
+        "1階ODE数値結果/number=" + str(number) + "/NEWTON_EXACT(number=" + str(number) + ",h=" + str(
             h) + ",n=" + str(n) + ").csv", 'w', newline='') as f:
     writer = csv.writer(f)
     for i in range(n):
@@ -280,7 +280,7 @@ for index, reg_nbit in enumerate(reg_nbit_list):
     t = time.time() - start
     HHL_runge_result[index] = HHL_first
 
-    with open("1階ODE数値結果/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(
+    with open("1階ODE数値結果/number=" + str(number) + "/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(
             h) + ",n=" + str(n) + ").csv", 'w', newline='') as f:
         writer = csv.writer(f)
         for i in range(n):

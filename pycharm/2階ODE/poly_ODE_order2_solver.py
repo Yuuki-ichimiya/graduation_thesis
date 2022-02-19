@@ -2,8 +2,6 @@ from import_summary import *
 from utility import *  # 計算基底に関する確率分布を表示
 from HHL_function import *  # HHL algorithmに必要な関数
 from function import *  # 各設定
-import tqdm
-
 
 # 多項式(の係数)list1と多項式(の係数)list2の掛け算、十分要素数が確保されているならenough=1
 def times_poly(poly1, poly2, enough=1):
@@ -87,7 +85,7 @@ for i in range(len(x_list) - 1):
 
 t = time.time() - start
 
-with open("2階ODE数値結果/RUNGE_EXACT(number=" + str(number) + ",h=" + str(h) + ",n=" + str(n) + ").csv", 'w',
+with open("2階ODE数値結果/number=" + str(number) + "/RUNGE_EXACT(number=" + str(number) + ",h=" + str(h) + ",n=" + str(n) + ").csv", 'w',
           newline='') as f:
     writer = csv.writer(f)
     for i in range(n):
@@ -289,7 +287,7 @@ for _ in tqdm.tqdm(range(depth)):
 t = time.time() - start
 y_exact_newton = newton_first
 
-with open("2階ODE数値結果/NEWTON_EXACT(number=" + str(number) + ",h=" + str(h) + ",n=" + str(n) + ").csv", 'w',
+with open("2階ODE数値結果/number=" + str(number) + "/NEWTON_EXACT(number=" + str(number) + ",h=" + str(h) + ",n=" + str(n) + ").csv", 'w',
           newline='') as f:
     writer = csv.writer(f)
     for i in range(n):
@@ -512,7 +510,7 @@ for index, reg_nbit in enumerate(reg_nbit_list):
     t = time.time() - start
     HHL_runge_result[index] = HHL_first
 
-    with open("2階ODE数値結果/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(h) + ",n=" + str(
+    with open("2階ODE数値結果/number=" + str(number) + "/HHL(number=" + str(number) + ",reg_qubits=" + str(reg_nbit) + ",h=" + str(h) + ",n=" + str(
             n) + ").csv", 'w', newline='') as f:
         writer = csv.writer(f)
         for i in range(n):
